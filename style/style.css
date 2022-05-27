@@ -1,0 +1,13 @@
+.image-background {
+  background: url(/images/background.jpg) no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 411px;
+}
+
+.background-image-subscribe {
+  background: url(/images/background-blure.jpg) no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 411px;
+}
