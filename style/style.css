@@ -114,6 +114,32 @@ body {
   line-height: 28px;
 }
 
+/*Преимущества начало*/
+
+.hotel-search {
+  text-align: center;
+}
+
+.hotel-search h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.hotel-search p {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.hotel-search a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
 /*Преимущества конец*/
 
 
