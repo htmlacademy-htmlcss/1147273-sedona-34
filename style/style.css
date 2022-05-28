@@ -1,8 +1,52 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url("fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #83B3D31F;
+  padding: 0;
+  margin: 0;
+}
+
 .image-background {
+  background-color: #fff;
+  color: #000;
   background: url(/images/background.jpg) no-repeat;
-  background-size: cover;
-  width: 1200px;
-  height: 411px;
+  background-size: 100% auto;
+  max-width: 100%;
+  padding-top: 26px;
+  padding-bottom: 82px;
 }
 
 .background-image-subscribe {
@@ -11,3 +55,47 @@
   width: 1200px;
   height: 411px;
 }
+
+
+/*Шапка начало*/
+
+.page-header {
+  background-color: #fff;
+  color: black;
+}
+
+.navigation-item a {
+  text-decoration: none;
+  color: black;
+  line-height: 26px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/*Шапка конец*/
+
+/*Слайд начало*/
+
+.header, .advantages-header {
+  text-align: center;
+}
+
+.advantages-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.advantages-title-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*Слайд конец*/
+
+/*Преимущества начало*/
+
+
+
+/*Преимущества конец*/
