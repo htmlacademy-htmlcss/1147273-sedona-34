@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="style/style.css">
   <title>Каталог</title>
 </head>
 <body>
   <header class="page-header">
     <nav class="navigation">
       <div class="image">
-        <img src="#" alt="Логотип Седона">
+        <img src="images/logo.svg" alt="Логотип Седона">
       </div>
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -33,11 +35,13 @@
         <li class="navigation-item">
           <a href="#" class="navigation-link">
             <span class="visually-hidden">Поиск</span>
+            <img src="images/search.svg" alt="" class="src">
           </a>
         </li>
         <li class="navigation-item">
           <a href="#" class="navigation-link">
             <span class="visually-hidden">Избранное</span>
+            <img src="images/favorite.svg" alt="" class="src">
           </a>
         </li>
         <li class="navigation-item">
@@ -47,7 +51,7 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
+    <section class="inner-header">
       <h1 class="inner-header-title">
         Гостиницы Седоны
       </h1>
@@ -55,9 +59,11 @@
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link" href="index.html">
             <span class="visually-hidden">Главная</span>
+            <img src="images/union.svg" alt="">
           </a>
         </li>
         <li class="breadcrumbs-item">
+          <img src="images/right.svg" alt="">
           <a class="breadcrumbs-link">Гостиницы</a>
         </li>
       </ul>
@@ -126,52 +132,59 @@
         </select>
         <a href="#" class="button button-left">
           <span class="visually-hidden">Показать карточки</span>
+          <img src="images/icon-table.svg" alt="Табличный вид">
         </a>
         <a class="button" href="#">
           <span class="visually-hidden">Показать карточку</span>
+          <img src="images/icon-slideshow.svg" alt="Показать карточку">
         </a>
         <a class="button button-right" href="#">
           <span class="visually-hidden">Показать список</span>
+          <img src="images/icon-list.svg" alt="">
         </a>
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Ущелье">
+            <img class="product-card-image" src="images/catalog/amara-resort.jpg" alt="Ущелье">
             <h3 class="product-card-title">Amara Resort & Spa</h3>
           </a>
           <b class="product-card-name">Гостиница</b>
           <b class="product-card-price">От 4000 ₽</b>
           <a class="product-card-button button" href="#">подробнее</a>
           <button class="button">в избранное</button>
+          <img src="images/star.svg" alt="Звезда">
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Виллы в Поко Диябло">
+            <img class="product-card-image" src="images/catalog/villas-at-poco-diablo.jpg" alt="Виллы в Поко Диябло">
             <h3 class="product-card-title">Villas at Poco Diablo</h3>
           </a>
           <b class="product-card-name">Гостиница</b>
           <b class="product-card-price">От 5000 ₽</b>
           <a class="product-card-button button" href="#">подробнее</a>
           <button class="button active">в избранном</button>
+          <img src="images/star.svg" alt="Звезда">
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Гора">
+            <img class="product-card-image" src="images/catalog/desert-quail.jpg" alt="Гора">
             <h3 class="product-card-title">Desert Quail Inn</h3>
           </a>
           <b class="product-card-name">Гостиница</b>
           <b class="product-card-price">От 2500 ₽</b>
           <a class="product-card-button button" href="#">подробнее</a>
           <button class="button">в избранное</button>
+          <img src="images/star.svg" alt="Звезда">
         </div>
         <div class="product-card">
           <a class="product-card-link" href="#">
-            <img class="product-card-image" src="#" alt="Скала">
+            <img class="product-card-image" src="images/catalog/green-tree.jpg" alt="Скала">
             <h3 class="product-card-title">GreenTree Inn</h3>
           </a>
           <b class="product-card-name">Гостиница</b>
           <b class="product-card-price">От 1500 ₽</b>
           <a class="product-card-button button" href="#">подробнее</a>
           <button class="button">в избранное</button>
+          <img src="images/star.svg" alt="Звезда">
         </div>
         <ul class="pagination">
           <li class="pagination-item">
@@ -194,7 +207,7 @@
           </li>
         </ul>
       </section>
-    </header>
+    </section>
   </main>
   <section class="subscribe">
     <div class="background-image-subscribe">
@@ -220,16 +233,19 @@
     <ul class="socials-list">
       <li class="socials-item">
         <a href="#" class="socials-button">
+          <img src="images/social/vk.svg" alt="Вконтакте">
           <span class="visually-hidden">Вконтакте</span>
         </a>
       </li>
       <li class="socials-item">
         <a href="#" class="socials-button">
+          <img src="images/social/telegram.svg" alt="Телеграм">
           <span class="visually-hidden">Телеграм</span>
         </a>
       </li>
       <li class="socials-item">
         <a href="#" class="socials-button">
+          <img src="images/social/youtube.svg" alt="Ютуб">
           <span class="visually-hidden">Ютуб</span>
         </a>
       </li>
@@ -241,7 +257,9 @@
     </p>
   </section>
   <section class="about-logo">
-    <a href="#">html academy</a>
+    <a href="#">
+      <img src="images/text-html-academy.svg" alt="Логотип академии">
+    </a>
   </section>
 </footer>
 </body>
