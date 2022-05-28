@@ -166,3 +166,21 @@ body {
 
 /*Подписка на рассылку конец*/
 
+/*Подвал начало*/
+
+.socials a {
+  text-decoration: none;
+
+}
+
+.socials-button {
+  background-color: #000;
+  color: white;
+}
+
+.number a {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 40px;
+}
+/*Подвал конец*/
