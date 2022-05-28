@@ -30,6 +30,8 @@
   font-display: swap;
 }
 
+/**************Главный начало**************/
+
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -37,6 +39,18 @@ body {
   background-color: #83B3D31F;
   padding: 0;
   margin: 0;
+}
+
+button {
+  text-decoration: none;
+  background-color: #82B3D3;
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  border: none;
 }
 
 .image-background {
@@ -183,4 +197,43 @@ body {
   font-size: 40px;
   line-height: 40px;
 }
+
 /*Подвал конец*/
+
+/**************Главный начало**************/
+
+
+
+/**************Каталог начало**************/
+
+/*Фильтр начало*/
+
+.inner-header, .catalog-filter {
+  background-color: black;
+  color: white;
+}
+
+.inner-header h1 {
+  font-size: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.inner-header a{
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.control-input {
+  line-height: 21px;
+}
+
+
+
+/*Фильтр конец*/
