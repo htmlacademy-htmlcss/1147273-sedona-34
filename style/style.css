@@ -16,7 +16,14 @@
 
 /**************Главный начало**************/
 
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -56,6 +63,18 @@ button {
   height: 411px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.container-footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**************Главный конец**************/
 
 /*Шапка начало*/
 
@@ -72,6 +91,21 @@ button {
   font-size: 20px;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 970px;
+  margin-left: 106px;
+}
+
+.container-navigation-list {
+  display: flex;
+}
+
+.container-navigation-list ul {
+  margin-left: 84px;
+}
+
 /*Шапка конец*/
 
 /*Слайд начало*/
@@ -83,6 +117,11 @@ button {
 
 .header, .advantages-header {
   text-align: center;
+}
+
+.advantages-header{
+  width: 654px;
+  margin: auto;
 }
 
 .advantages-title {
@@ -105,6 +144,11 @@ button {
   background-color: #82B3D3;
   color: white;
   text-align: center;
+  display: flex;
+}
+
+.advantage-list {
+  display: flex;
 }
 
 .advantages h3 {
@@ -182,6 +226,12 @@ button {
   line-height: 40px;
 }
 
+.container-footer {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
 /*Подвал конец*/
 
 /**************Главный начало**************/
@@ -195,6 +245,23 @@ button {
 .inner-header, .catalog-filter {
   background-color: black;
   color: white;
+}
+
+.container-header {
+  width: 1060px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-filter {
+  width: 1060px;
+  margin: auto;
+}
+
+.catalog-filter-form {
+  display: flex;
+  justify-content: space-between;
 }
 
 .inner-header h1 {
@@ -220,7 +287,31 @@ button {
 
 /*Фильтр конец*/
 
-/*Каталог наччало*/
+/*Каталог начало*/
+
+.container-catalog {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container-catalog-title {
+  width: 1200px;
+  display: flex;
+}
+
+.container-product-card {
+  margin: auto;
+  width: 1016px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-catalog-paginaion {
+  width: 1016px;
+  margin-right: auto;
+}
 
 .catalog-products h3 {
   text-transform: uppercase;
@@ -251,6 +342,10 @@ button {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+
+.pagination {
+  display: flex;
 }
 
 .pagination-item a {
