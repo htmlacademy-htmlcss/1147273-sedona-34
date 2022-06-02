@@ -247,6 +247,23 @@ button {
   color: white;
 }
 
+.container-header {
+  width: 1060px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-filter {
+  width: 1060px;
+  margin: auto;
+}
+
+.catalog-filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
 .inner-header h1 {
   font-size: 60px;
   font-weight: 700;
@@ -270,7 +287,31 @@ button {
 
 /*Фильтр конец*/
 
-/*Каталог наччало*/
+/*Каталог начало*/
+
+.container-catalog {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.container-catalog-title {
+  width: 1200px;
+  display: flex;
+}
+
+.container-product-card {
+  margin: auto;
+  width: 1016px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-catalog-paginaion {
+  width: 1016px;
+  margin-right: auto;
+}
 
 .catalog-products h3 {
   text-transform: uppercase;
@@ -301,6 +342,10 @@ button {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+
+.pagination {
+  display: flex;
 }
 
 .pagination-item a {
