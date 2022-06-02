@@ -56,6 +56,17 @@ button {
   height: 411px;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.container-footer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/**************Главный конец**************/
 
 /*Шапка начало*/
 
@@ -70,6 +81,21 @@ button {
   line-height: 26px;
   font-weight: 700;
   font-size: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 970px;
+  margin-left: 106px;
+}
+
+.container-navigation-list {
+  display: flex;
+}
+
+.container-navigation-list ul {
+  margin-left: 84px;
 }
 
 /*Шапка конец*/
