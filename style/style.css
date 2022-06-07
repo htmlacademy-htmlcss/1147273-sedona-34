@@ -14,6 +14,17 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**************Главный начало**************/
 
 html {
@@ -77,6 +88,10 @@ button {
 /**************Главный конец**************/
 
 /*Шапка начало*/
+
+.navigation-list {
+  list-style-type: none;
+}
 
 .page-header {
   background-color: #fff;
@@ -145,10 +160,12 @@ button {
   color: white;
   text-align: center;
   display: flex;
+  list-style-type: none;
 }
 
 .advantage-list {
   display: flex;
+  list-style-type: none;
 }
 
 .advantages h3 {
@@ -220,6 +237,10 @@ button {
   color: white;
 }
 
+.socials-list {
+  list-style-type: none;
+}
+
 .number a {
   text-transform: uppercase;
   font-size: 40px;
@@ -254,6 +275,10 @@ button {
   flex-direction: column;
 }
 
+.breadcrumbs {
+  list-style-type: none;
+}
+
 .container-filter {
   width: 1060px;
   margin: auto;
@@ -279,6 +304,10 @@ button {
   font-weight: 700;
   line-height: 26px;
   text-transform: capitalize;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .control-input {
@@ -346,6 +375,7 @@ button {
 
 .pagination {
   display: flex;
+  list-style-type: none;
 }
 
 .pagination-item a {
