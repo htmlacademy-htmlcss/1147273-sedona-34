@@ -304,7 +304,7 @@ button {
   list-style-type: none;
 }
 
-.number a {
+.number-text a {
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
@@ -333,6 +333,10 @@ button {
   color: white;
 }
 
+.inner-header {
+  padding-top: 40px;
+}
+
 .container-header {
   width: 1060px;
   margin: auto;
@@ -341,20 +345,27 @@ button {
 }
 
 .breadcrumbs {
+  width: 120px;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 88px;
 }
 
 .container-filter {
   width: 1060px;
   margin: auto;
+  padding-bottom: 70px;
 }
 
 .catalog-filter-form {
+  width: 1000px;
   display: flex;
   justify-content: space-between;
 }
 
-.inner-header h1 {
+.inner-header-title {
   font-size: 60px;
   font-weight: 700;
   text-transform: capitalize;
@@ -362,6 +373,12 @@ button {
 
 .inner-header a{
   text-decoration: none;
+}
+
+.container-filter-group {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
 }
 
 .catalog-filter-title {
@@ -373,6 +390,11 @@ button {
 
 .catalog-filter-list {
   list-style-type: none;
+}
+
+.container-filter-submit {
+  display: flex;
+  flex-direction: column;
 }
 
 .control-input {
@@ -388,12 +410,16 @@ button {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  padding: 17px 71px 30px 73px;
 }
 
 .container-catalog-title {
-  width: 1200px;
+  width: 1100px;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 
 .container-product-card {
   margin: auto;
