@@ -25,6 +25,12 @@
   overflow: hidden;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /**************Главный начало**************/
 
 html {
@@ -69,7 +75,7 @@ button {
   background-color: #fff;
   color: #000;
   background: url(/images/background-blure.jpg) no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   max-width: 100%;
   height: 411px;
   padding-top: 94px;
@@ -92,8 +98,10 @@ button {
 /*Шапка начало*/
 
 .navigation-list {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   width: 500px;
   padding: 0;
   margin: 0;
@@ -106,6 +114,7 @@ button {
 }
 
 .navigation-link {
+  box-sizing: border-box;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -123,13 +132,19 @@ button {
   display: flex;
   width: 970px;
   margin: auto;
+  box-sizing: border-box;
+}
+
+.navigation-item {
+  align-items: center;
 }
 
 .navigation-user {
-  width: 290px;
+  width: 295px;
 }
 
 .navigation-user .navigation-link {
+  padding: 20px 12px;
   min-width: 16px;
   min-height: 22px;
 }
@@ -161,11 +176,12 @@ button {
 
 /*Преимущества начало*/
 
-.header, .advantages-header {
+.header,
+.advantages-header {
   text-align: center;
 }
 
-.advantages-header{
+.advantages-header {
   width: 705px;
   margin: auto;
 }
@@ -306,6 +322,8 @@ button {
 
 .number-text a {
   text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
   font-size: 40px;
   line-height: 40px;
 }
@@ -314,8 +332,8 @@ button {
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  align-items: baseline;
+  padding: 40px 72px 30px 72px;
 }
 
 /*Подвал конец*/
@@ -328,7 +346,8 @@ button {
 
 /*Фильтр начало*/
 
-.inner-header, .catalog-filter {
+.inner-header,
+.catalog-filter {
   background-color: black;
   color: white;
 }
@@ -371,7 +390,7 @@ button {
   text-transform: capitalize;
 }
 
-.inner-header a{
+.inner-header a {
   text-decoration: none;
 }
 
