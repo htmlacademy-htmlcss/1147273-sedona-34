@@ -464,8 +464,9 @@ button {
 .container-product-card {
   margin: auto;
   width: 1016px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  column-gap: 18px;
 }
 
 .container-catalog-paginaion {
@@ -478,6 +479,35 @@ button {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+}
+
+.product-card {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.inner-price b {
+  width: 140px;
+  text-align: left;
+}
+
+.inner-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.inner-button a, .inner-button button {
+  width: 140px;
 }
 
 .product-card h3 {
@@ -502,6 +532,10 @@ button {
   text-align: center;
   font-size: 16px;
   color: white;
+}
+
+.product-card-image {
+  object-fit: cover;
 }
 
 .pagination {
