@@ -98,23 +98,24 @@ button {
 /*Шапка начало*/
 
 .navigation-list {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  width: 500px;
   padding: 0;
   margin: 0;
+  align-items: center;
+  width: 450px;
+  margin-left: auto;
   list-style-type: none;
 }
 
 .page-header {
   background-color: #fff;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation-link {
-  box-sizing: border-box;
   text-align: center;
   text-decoration: none;
   color: black;
@@ -125,14 +126,52 @@ button {
   margin: 0;
   display: block;
   padding: 20px 17px;
+  position: relative;
 }
 
+.navigation-link-active::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background-color: #756257;
+  bottom: 0;
+  right: 17px;
+  left: 17px;
+}
+
+.link-login {
+  display: block;
+  background-color: #756157;
+  border-radius: 4px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 8px 30px;
+  margin-left: 20px;
+}
+
+.link-login:hover {
+  background-color: #615048;
+}
+
+.link-login:active {
+  background-color: #756157;
+}
+
+.link-login:disabled {
+  background-color: #E5E5E5;
+}
 
 .navigation {
   display: flex;
-  width: 970px;
+  width: 1060px;
   margin: auto;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .navigation-item {
@@ -140,7 +179,11 @@ button {
 }
 
 .navigation-user {
-  width: 295px;
+  padding: 0;
+  margin: 0;
+  max-width: 272px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user .navigation-link {
@@ -150,15 +193,22 @@ button {
 }
 
 .container-navigation-list {
-  width: 1024px;
+  width: 620px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
-.container-navigation-list ul {
-  margin-left: 66px;
+.home-link {
+  position: absolute;
 }
+
+.image {
+  position: relative;
+  width: 140px;
+}
+
 
 /*Шапка конец*/
 
@@ -222,9 +272,6 @@ button {
   grid-column: 2 / -1;
 }
 
-.advantages-bridge-item {
-
-}
 
 .advantage-list li:nth-child(1) {
   grid-column: 1 / 3;
