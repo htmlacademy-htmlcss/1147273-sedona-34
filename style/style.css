@@ -232,7 +232,6 @@ button {
 }
 
 .advantages-header {
-  width: 705px;
   margin: auto;
 }
 
@@ -300,11 +299,69 @@ button {
   text-align: center;
 }
 
+.advantages-list li:nth-child(3) {
+   background-color: #F0F6FA;
+   color: #000;
+}
+
+.advantages-list li:nth-child(4) {
+  background-color: #ffffff;
+  color: #000;
+}
+
+.advantages-list li:nth-child(5) {
+  background-color: #F0F6FA;
+  color: #000;
+}
+
+.advantages-list li:nth-child(3) img {
+  margin-bottom: 30px;
+}
+
+.advantages-list li:nth-child(4) img {
+  margin-bottom: 30px;
+}
+
+.advantages-list li:nth-child(5) img {
+  margin-bottom: 30px;
+}
+
+.advantage-list li:nth-child(3) {
+  background-color: #E5E5E5;
+  color: #000;
+}
+
+.advantage-list li:nth-child(4) {
+ background-color: #E6F0F6;
+ color: #000;
+}
+
+.advantage-list li:nth-child(5) {
+ background-color: #F0F6FA;
+ color: #000;
+}
+
 .advantages h3 {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages p {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
+.container-sity img, .container-bridge img {
+  display: block;
+  margin: 0 auto;
 }
 
 /*Преимущества начало*/
