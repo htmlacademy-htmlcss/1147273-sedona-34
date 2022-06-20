@@ -983,18 +983,70 @@ button {
   line-height: 20px;
 }
 
-.pagination {
+.container-catalog-paginaion {
+  margin: auto;
+  width: 1030px;
   display: flex;
-  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.pagination-item a {
+.pagination {
+  padding: 0;
+  display: flex;
+  list-style-type: none;
+  width: 420px;
+  justify-content: space-between;
+}
+
+.pagination-link {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  display: block;
   background-color: #82B3D3;
   color: white;
   text-align: center;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  padding: 10px 22px;
+  border-radius: 4px;
+}
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-link:active {
+  opacity: 0.6;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000;
+}
+
+.inner-info-catalog {
+  width: 390px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-info-catalog span {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.select-control-info {
+  margin: 0;
+  padding: 0;
+  padding-right: 90px;
 }
 
 .subscribe-catalog {
@@ -1014,7 +1066,7 @@ button {
   background-color: #F2F2F2;
 }
 
-.subscribe-description {
+.subscribe-catalog .subscribe-description {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
