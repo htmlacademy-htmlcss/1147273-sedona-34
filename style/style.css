@@ -46,7 +46,6 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background-color: #83B3D31F;
   padding: 0;
   margin: 0;
 }
@@ -89,6 +88,7 @@ button {
   width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
+  box-shadow: 0px -10px 10px -2px;
 }
 
 .container-footer {
@@ -779,10 +779,9 @@ button {
   line-height: 36px;
 }
 
-/*Каталог конец*/
-
 .subscribe-catalog {
-  text-align: center
+  text-align: center;
+  color: #000;
 }
 
 .subscribe-catalog h3 {
@@ -793,10 +792,20 @@ button {
   color: black;
 }
 
-.subscribe-cataloge p {
+.subscribe-catalog-inner-form .subscribe-email {
+  background-color: #F2F2F2;
+}
+
+.subscribe-description {
   font-size: 22px;
   line-height: 26px;
-  color: white;
+  color: #333333;
+}
+
+.background-img {
+  background-color: #fff;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /**************Каталог конец**************/
