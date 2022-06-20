@@ -129,6 +129,10 @@ button {
   position: relative;
 }
 
+.navigation-link:hover {
+  color: #756157;
+}
+
 .navigation-link-active::after {
   content: "";
   position: absolute;
