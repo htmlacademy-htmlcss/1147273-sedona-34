@@ -508,9 +508,20 @@ button {
   display: block;
 }
 
+.social-icon {
+  fill: #83B3D3;
+}
 
-.socials-button {
+.socials-button:hover .social-icon {
+  fill: #68A2CA;
+}
 
+.socials-button:focus .social-icon {
+  fill: #68A2CA;
+}
+
+.socials-button:active .social-icon {
+  fill: #D2E3EF;
 }
 
 .socials-list {
@@ -530,6 +541,18 @@ button {
   line-height: 40px;
 }
 
+.number-text a:hover {
+  color: #756157;
+}
+
+.number-text a:focus {
+  color: #756157;
+}
+
+.number-text a:active {
+  color: #D6D0CD;
+}
+
 .number-text {
   padding: 0;
   margin: 0;
@@ -541,6 +564,22 @@ button {
   justify-content: space-between;
   align-items: baseline;
   padding: 45px 70px 35px 81px;
+}
+
+.about-icon {
+  fill: #000000;
+}
+
+.about-icon:hover {
+  fill: #756157;
+}
+
+.about-icon:focus {
+  fill: #756157;
+}
+
+.about-icon:active {
+  fill: #D6D0CD;
 }
 
 /*Подвал конец*/
