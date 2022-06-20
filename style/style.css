@@ -594,14 +594,32 @@ button {
 
 /*Фильтр начало*/
 
+.container-background-image-filter {
+  padding: 35px 70px 70px 70px;
+  position: relative;
+}
+
+.container-background-image-filter:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -2;
+  background: url(../images/background.jpg) no-repeat;
+  /* filter: blur(10px); */
+  background-size: 100% auto;
+}
+
+
 .inner-header,
 .catalog-filter {
-  background-color: black;
   color: white;
 }
 
 .inner-header {
-  padding-top: 40px;
+
 }
 
 .container-header {
@@ -612,18 +630,52 @@ button {
 }
 
 .breadcrumbs {
-  width: 120px;
+  padding: 0;
+  margin: 0;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
-  margin: 0;
   margin-bottom: 88px;
+}
+
+.breadcrumbs li:nth-child(2) {
+  display: flex;
+}
+
+.home-link-icon {
+  fill: #fff;
+}
+
+.breadcrumbs-link {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumbs-link:hover .home-link-icon {
+  fill: #B9BFCB;
+}
+
+.breadcrumbs-link:active .home-link-icon {
+  fill: #868885;
+}
+
+.breadcrumbs-link:hover {
+  color: #B9BFCB;
+}
+
+.breadcrumbs-link:active {
+  color: #868885;
+}
+
+.breadcrumbs-item-right img {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .container-filter {
   width: 1060px;
   margin: auto;
-  padding-bottom: 70px;
 }
 
 .catalog-filter-form {
@@ -633,6 +685,10 @@ button {
 }
 
 .inner-header-title {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  display: block;
   font-size: 60px;
   font-weight: 700;
   text-transform: capitalize;
@@ -666,6 +722,43 @@ button {
 
 .control-input {
   line-height: 21px;
+}
+
+.botton-filter {
+  padding: 14px 30px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+}
+
+.botton-filter:hover {
+  background-color: #68A2CA;
+}
+
+.botton-filter:active {
+  background-color: #82B3D3;
+  color: #A7CAE0;
+}
+
+.botton-filter:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-filter-esc {
+  display: block;
+  text-align: center;
+  padding: 14px 30px;
+}
+
+.button-filter-esc:hover {
+  opacity: 0.6;
+}
+
+.button-filter-esc:focus {
+  border: #68A2CA solid 2px;
+}
+
+.button-filter-esc:active {
+  opacity: 0.3;
 }
 
 /*Фильтр конец*/

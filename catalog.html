@@ -50,87 +50,97 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="inner-header">
-        <div class="container-header">
-          <h1 class="inner-header-title">
-            Гостиницы Седоны
-          </h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">
-                <span class="visually-hidden">Главная.</span>
-                <img src="images/home.svg" alt="">
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <img src="images/right.svg" alt="">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ul>
+      <div class="container-background-image-filter">
+        <div class="wrapper-filter">
+          <section class="inner-header">
+            <div class="container-header">
+              <h1 class="inner-header-title">
+                Гостиницы Седоны
+              </h1>
+              <ul class="breadcrumbs">
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link" href="index.html">
+                    <span class="visually-hidden">Главная.</span>
+                    <svg class="home-link-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.162109 6.1499L6.16211 0.649902L12.1621 6.1499V12.3499H0.162109V6.1499ZM1.16211 6.5499V11.3499H11.1621V6.5499L6.16211 2.0499L1.16211 6.5499ZM5.16211 10.3499H4.16211V6.84985H8.16211V10.3499H7.16211V7.84985H5.16211V10.3499Z"/>
+                      </svg>
+
+                  </a>
+                </li>
+                <li class="breadcrumbs-item-right">
+                  <img src="images/right.svg" alt="">
+                </li>
+                <li class="breadcrumbs-item">
+                  <a class="breadcrumbs-link">Гостиницы</a>
+                </li>
+              </ul>
+            </div>
+           </section>
+            <section class="catalog-filter">
+              <div class="container-filter">
+                <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <div class="container-filter-group">
+                    <fieldset class="catalog-filter-group">
+                      <legend class="catalog-filter-title">Инфраструктура:</legend>
+                      <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="bed-head-for-inf" checked>
+                            Бассейн
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="bed-head-for-inf" checked>
+                            Парковка
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="checkbox" name="bed-head-for-inf">
+                            Wi-Fi
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                    <fieldset class="catalog-filter-group">
+                      <legend class="catalog-filter-title">Тип жилья:</legend>
+                      <ul class="catalog-filter-list">
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="radio" name="bed-head-for-inf" checked>
+                            Гостиница
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="radio" name="bed-head-for-inf">
+                            Мотель
+                          </label>
+                        </li>
+                        <li class="catalog-filter-item">
+                          <label class="control">
+                            <input class="control-input" type="radio" name="bed-head-for-inf">
+                            Апартаменты
+                          </label>
+                        </li>
+                      </ul>
+                    </fieldset>
+                  </div>
+
+                  <div class="container-filter-submit">
+                    <button class="button botton-filter" type="submit">Применить</button>
+                    <a class="button button-filter-esc" type="submit">Сбросить</a>
+                  </div>
+
+                </form>
+              </div>
+
+            </section>
         </div>
-       </section>
-        <section class="catalog-filter">
-          <div class="container-filter">
-            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <div class="container-filter-group">
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Инфраструктура:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="bed-head-for-inf" checked>
-                        Бассейн
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="bed-head-for-inf" checked>
-                        Парковка
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="checkbox" name="bed-head-for-inf">
-                        Wi-Fi
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
 
-                <fieldset class="catalog-filter-group">
-                  <legend class="catalog-filter-title">Тип жилья:</legend>
-                  <ul class="catalog-filter-list">
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="bed-head-for-inf" checked>
-                        Гостиница
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="bed-head-for-inf">
-                        Мотель
-                      </label>
-                    </li>
-                    <li class="catalog-filter-item">
-                      <label class="control">
-                        <input class="control-input" type="radio" name="bed-head-for-inf">
-                        Апартаменты
-                      </label>
-                    </li>
-                  </ul>
-                </fieldset>
-              </div>
+      </div>
 
-              <div class="container-filter-submit">
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="submit">Сбросить</button>
-              </div>
-
-            </form>
-          </div>
-
-        </section>
         <section class="catalog-products">
           <div class="container-catalog">
             <div class="container-catalog-title">
