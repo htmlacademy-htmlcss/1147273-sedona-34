@@ -15,7 +15,7 @@
         <div class="container-navigation-list">
           <div class="image">
             <a href="index.html" class="home-link">
-              <img src="images/logo.svg" alt="Логотип Седона." />
+              <img role="img" src="images/logo.svg" alt="Логотип Седона." />
             </a>
           </div>
           <ul class="navigation-list">
@@ -50,6 +50,7 @@
       </nav>
     </header>
     <main class="main-inner">
+
       <div class="container-background-image-filter">
         <div class="wrapper-filter">
           <section class="inner-header">
@@ -130,7 +131,7 @@
 
                   <div class="container-filter-submit">
                     <button class="button botton-filter" type="submit">Применить</button>
-                    <a class="button button-filter-esc" type="submit">Сбросить</a>
+                    <a href="#" class="button button-filter-esc">Сбросить</a>
                   </div>
 
                 </form>
@@ -138,6 +139,8 @@
 
             </section>
         </div>
+        <div class="box-overlay"></div>
+        <div class="blur"></div>
       </div>
 
         <section class="catalog-products">
@@ -154,18 +157,18 @@
                 </select>
               </div>
               <div class="inner-catalog-link">
-                <a href="#" class="button button-sort button-sort-active button-left">
+                <button class="button button-sort button-sort-active button-left">
                   <span class="visually-hidden">Показать карточки.</span>
                   <img src="images/icon-table.svg" alt="Табличный вид">
-                </a>
-                <a class="button button-sort" href="#">
+                </button>
+                <button class="button button-sort">
                   <span class="visually-hidden">Показать карточку.</span>
                   <img src="images/icon-slideshow.svg" alt="Показать карточку">
-                </a>
-                <a class="button button-sort button-right" href="#">
+                </button>
+                <button class="button button-sort button-right">
                   <span class="visually-hidden">Показать список.</span>
                   <img src="images/icon-list.svg" alt="">
-                </a>
+                </button>
               </div>
             </div>
             <div class="container-product-card">
@@ -293,8 +296,6 @@
           </div>
 
         </section>
-      </section>
-    </main>
     <section class="subscribe-catalog">
       <div class="background-img">
         <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
