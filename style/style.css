@@ -143,7 +143,7 @@ button {
 .navigation-link-icon::after {
   z-index: 1;
   position: absolute;
-  display: block;
+  display: none;
   content: "12";
   letter-spacing: -0.1em;
   color: #fff;
@@ -640,22 +640,6 @@ button {
   z-index: 0;
 }
 
-/* .container-background-image-filter:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);;
-} */
-
-
-
 .box-overlay {
   width: 100%;
   height: 100%;
@@ -684,15 +668,6 @@ button {
 .home-link {
   z-index: 50;
 }
-
-/* .wrapper-filter {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 30;
-} */
 
 .inner-header,
 .catalog-filter {
@@ -755,6 +730,17 @@ button {
   margin: auto;
 }
 
+.catalog-filter-group {
+ border: none;
+ padding: 0;
+ margin: 0;
+}
+
+legend {
+  padding: 0;
+  margin: 0;
+}
+
 .catalog-filter-form {
   width: 1050px;
   margin: auto;
@@ -782,6 +768,92 @@ button {
   justify-content: space-between;
   width: 450px;
 }
+
+.catalog-filter-list {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-title {
+  margin-bottom: 30px;
+}
+
+.control {
+  position: relative;
+  display: block;
+  padding-left: 40px;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.control-label {
+  font-weight:normal;
+}
+
+.control:hover .control-mark {
+  opacity: 0.6;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.2;
+}
+
+.control-input:focus + .control-mark {
+  box-shadow: #83b3d3 0px 0px 0px 3px;
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  height: 2px;
+  background-color: #3F5E72;
+  content: "";
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  transform: rotate(45deg);
+  width: 6px;
+  left: 3px;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after {
+  transform: rotate(-52deg);
+  width: 13px;
+  top: 8px;
+  left: 5px;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color:  #3F5E72;;
+  border-radius: 50%;
+  content: "";
+}
+
+.control-mark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  left: 0;
+  top: -1px;
+  border-radius: 4px;
+}
+
 
 .catalog-filter-title {
   font-size: 20px;
