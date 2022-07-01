@@ -908,7 +908,7 @@ legend {
   content: "";
   display: block;
   width: 3px;
-  height: 53px;
+  height: 50px;
   left: -35px;
   top: -14px;
   background-color: #fff;
@@ -1002,6 +1002,7 @@ legend {
 
 .button-filter-esc:focus {
   border: #68A2CA solid 2px;
+  padding: 12px 30px;
 }
 
 .button-filter-esc:active {
