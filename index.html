@@ -200,5 +200,54 @@
         </section>
       </div>
     </footer>
+
+    <!-- Попап -->
+
+    <div class="popup-container">
+      <div class="popup popup-auth">
+        <h2 class="popup-title">
+          Поиск гостиницы в седоне
+        </h2>
+        <button class="popup-close" type="submit">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="popup-content">
+          <form action="https://echo.htmlacademy.ru/" method="post" class="popup-form">
+            <div class="wrapper-inputs wrapper-inputs-date">
+              <label for="checkin" class="field-group">Дата Заезда:</label>
+              <input id="checkin" type="text" class="popup-form-filed" placeholder="Укажите дату">
+            </div>
+            <div class="wrapper-inputs wrapper-inputs-date">
+              <label for="departure" class="field-group">Дата Выезда:</label>
+              <input id="departure" type="text" class="popup-form-filed" placeholder="Укажите дату">
+            </div>
+            <div class="wrapper-inputs">
+                <div class="wrapper-input">
+                    <label for="adults" class="field-group">Взрослые:</label>
+                  <div class="inner-input-counter">
+                    <button class="button-count button-count-minus">
+                    </button>
+                    <input id="adults" type="text" class="popup-form-filed-counter" placeholder="1">
+                    <button class="button-count button-count-plus">
+                    </button>
+                  </div>
+                </div>
+                <div class="wrapper-input">
+                    <label for="adults" class="field-group">Дети:</label>
+                    <div class="inner-input-counter">
+                    <button class="button-count button-count-minus">
+                    </button>
+                    <input id="adults" type="text" class="popup-form-filed-counter" placeholder="1">
+                    <button class="button-count button-count-plus">
+                    </button>
+                  </div>
+                </div>
+            </div>
+            <button class="button-search">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+
   </body>
 </html>
