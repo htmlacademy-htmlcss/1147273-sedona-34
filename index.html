@@ -216,6 +216,7 @@
             <div class="wrapper-inputs wrapper-inputs-date">
               <label for="checkin" class="field-group">Дата Заезда:</label>
               <input id="checkin" type="text" class="popup-form-filed" placeholder="Укажите дату">
+              <span class="text-info text-info-none">Мы не можем отправить вас в прошлое.</span>
             </div>
             <div class="wrapper-inputs wrapper-inputs-date">
               <label for="departure" class="field-group">Дата Выезда:</label>
@@ -233,7 +234,26 @@
                   </div>
                 </div>
                 <div class="wrapper-input">
-                    <label for="adults" class="field-group">Дети:</label>
+                    <label for="adults" class="field-group field-group-info">Дети:
+                      <button class="info-child-button" type="button">
+                        <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <g clip-path="url(#clip0_39785_735)">
+                          <path d="M0 9H1L1 3H0L0 9Z" fill="white"/>
+                          <path d="M1 0H0V1H1V0Z" fill="white"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_39785_735">
+                          <rect width="1" height="9" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg>
+                      </button>
+                      <span class="info-child">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются <br> бесплатно.
+                      </span>
+                    </label>
+
+
                     <div class="inner-input-counter">
                     <button class="button-count button-count-minus">
                     </button>

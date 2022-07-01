@@ -111,6 +111,8 @@ button {
   height: 100%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.703);
+
+  display: none;
 }
 
 .popup {
@@ -120,6 +122,7 @@ button {
   width: 715px;
   padding: 62px 70px 70px 70px;
   border-radius: 30px;
+  transition: all 0.8s ease 0s;
 }
 
 .popup-title {
@@ -133,7 +136,7 @@ button {
 
 .popup-close {
   position: absolute;
-  right: 63px;
+  right: 70px;
   top: 55px;
   padding: 0;
   width: 53px;
@@ -179,6 +182,19 @@ button {
   bottom: 35%;
 }
 
+.text-info {
+  position: absolute;
+  bottom: -25px;
+  left: 27%;
+  color: #FF5757;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.text-info-none {
+  display: none;
+}
+
 .field-group {
   font-weight: 700;
   font-size: 20px;
@@ -197,6 +213,63 @@ button {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+}
+
+.field-group-info {
+  position: relative;
+}
+
+.info-child-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  display: block;
+  background-color: #83B3D3;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  right: -30px;
+  top: 2px;
+  display: block;
+}
+
+.info-child {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: normal;
+  text-transform: none;
+  padding: 16px 18px;
+  border-radius: 10px;
+  width: 256px;
+  position: absolute;
+  top: 100%;
+  margin-top: 20px;
+  left: 85%;
+  transform: translateX(-40%);
+  z-index: 1;
+  display: none;
+}
+
+.info-child:before {
+  content:'';
+  background-image: url(/images/tooltip-arrow.svg);
+  width: 19px;
+  height: 9px;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-child-button:hover + .info-child,
+.info-child-button:focus + .info-child {
+  display: block;
 }
 
 .popup-form-filed:hover {
