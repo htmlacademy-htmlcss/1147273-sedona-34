@@ -135,6 +135,31 @@
                     </fieldset>
                   </div>
 
+                  <div class="container-filter-range">
+                    <fieldset class="catalog-filter-group">
+                      <legend class="catalog-filter-title">Стоимость, &#x20BD:</legend>
+                      <div class="range">
+                        <div class="range-wrapper-inputs">
+                          <label class="catalog-filter-label">
+                            <input class="range-input" type="number"><span>от</span>
+                          </label>
+                          <label class="catalog-filter-label catalog-filter-label-line">
+                            <input class="range-input" type="number"><span>до</span>
+                          </label>
+                        </div>
+
+                        <div class="range-scale">
+                          <div class="range-bar" style="left: 0px; width: 180px">
+                            <button class="range-toggle toggle-min" type="button"></button>
+                            <span class="visually-hidden">Изменить минимальную цену.</span>
+                            <button class="range-toggle toggle-max" type="button"></button>
+                            <span class="visually-hidden">Изменить максимальную цену</span>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+
                   <div class="container-filter-submit">
                     <button class="button botton-filter" type="submit">Применить</button>
                     <a href="#" class="button button-filter-esc">Сбросить</a>
@@ -155,7 +180,7 @@
               <h2 class="results-title">
                 Найдено гостиниц: 38
               </h2>
-              <div>
+              <div class="select sorting-type">
                 <select class="select-control" aria-label="Сортировка">
                   <option value="popular">Сначала дешёвые</option>
                   <option value="cheap">Сначала популярные</option>

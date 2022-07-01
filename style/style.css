@@ -743,7 +743,6 @@ legend {
 
 .catalog-filter-form {
   width: 1050px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -766,7 +765,7 @@ legend {
 .container-filter-group {
   display: flex;
   justify-content: space-between;
-  width: 450px;
+  width: 430px;
 }
 
 .catalog-filter-list {
@@ -866,6 +865,101 @@ legend {
   list-style-type: none;
 }
 
+.range-wrapper-inputs {
+  width: 246px;
+  margin-bottom: 38px;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  padding: 11px 17px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-label {
+  display: flex;
+}
+
+.catalog-filter-label span {
+  opacity: 0.3;
+}
+
+.range-input {
+  width: 60px;
+  font: inherit;
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.catalog-filter-label:nth-child(2) {
+  margin-left: 30px;
+  position: relative;
+}
+
+.catalog-filter-label-line::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 3px;
+  height: 53px;
+  left: -35px;
+  top: -14px;
+  background-color: #fff;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #bfbfbf3d;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #fff;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background-color: #bfbfbf;
+}
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: 0;
+}
+
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+
 .container-filter-submit {
   display: flex;
   flex-direction: column;
@@ -926,6 +1020,63 @@ legend {
   margin: 0;
   display: block;
   padding: 16px 17px;
+}
+
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 290px;
+}
+
+.select-control {
+  width: 100%;
+  padding: 14px 20px;
+  padding-right: 109px;
+  font: inherit;
+  font-weight: normal;
+  background-color: #fff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-image: url(/images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border-color: #68A2CA;
+}
+
+.select-control:active {
+  border-color: #3F5E72;
+}
+
+.select-control-info {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 160px;
+  padding: 14px 20px;
+  padding-right: 109px;
+  font: inherit;
+  font-weight: normal;
+  background-color: #fff;
+  border: 2px solid #E5E5E5;
+  background-image: url(/images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  appearance: none;
+}
+
+.select-control-info:hover,
+.select-control-info:focus {
+  border-color: #68A2CA;
+}
+
+.select-control-info:active {
+  border-color: #3F5E72;
 }
 
 .button-sort:hover {
@@ -1197,12 +1348,6 @@ legend {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
-}
-
-.select-control-info {
-  margin: 0;
-  padding: 0;
-  padding-right: 90px;
 }
 
 .subscribe-catalog {
