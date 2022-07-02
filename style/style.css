@@ -144,7 +144,7 @@ button {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url(/images/close.svg);
+  background-image: url(../images/close.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -176,7 +176,7 @@ button {
   width: 15px;
   height: 15px;
   position: absolute;
-  background-image: url(/images/calendar.svg);
+  background-image: url(../images/calendar.svg);
   background-repeat: no-repeat;
   right: 19px;
   bottom: 35%;
@@ -256,7 +256,7 @@ button {
 
 .info-child:before {
   content:'';
-  background-image: url(/images/tooltip-arrow.svg);
+  background-image: url(../images/tooltip-arrow.svg);
   width: 19px;
   height: 9px;
   position:absolute;
@@ -317,7 +317,7 @@ button {
 }
 
 .button-count-minus {
-  background-image: url(/images/count-minus.svg);
+  background-image: url(../images/count-minus.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 25px;
@@ -326,7 +326,7 @@ button {
 }
 
 .button-count-plus {
-  background-image: url(/images/count-plus.svg);
+  background-image: url(../images/count-plus.svg);
   background-position: center;
   background-repeat: no-repeat;
   width: 25px;
@@ -1142,17 +1142,18 @@ legend {
 }
 
 .range-wrapper-inputs {
-  width: 246px;
+  width: 280px;
   margin-bottom: 38px;
   border: 3px solid #fff;
   border-radius: 4px;
   padding: 11px 17px;
   display: flex;
-  justify-content: space-between;
 }
 
 .catalog-filter-label {
   display: flex;
+  width: 160px;
+  justify-content: space-between;
 }
 
 .catalog-filter-label span {
@@ -1160,7 +1161,7 @@ legend {
 }
 
 .range-input {
-  width: 60px;
+  width: 44px;
   font: inherit;
   text-align: left;
   color: #fff;
@@ -1185,7 +1186,7 @@ legend {
   display: block;
   width: 3px;
   height: 50px;
-  left: -35px;
+  left: -17px;
   top: -14px;
   background-color: #fff;
 }
@@ -1619,6 +1620,7 @@ legend {
   width: 390px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .inner-info-catalog span {
@@ -1656,4 +1658,10 @@ legend {
   padding-bottom: 94px;
 }
 
+.info-catalog {
+  color: #333333;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
 /**************Каталог конец**************/
