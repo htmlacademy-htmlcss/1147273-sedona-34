@@ -112,7 +112,6 @@ button {
   display: flex;
   background-color: rgba(255, 255, 255, 0.703);
 
-  display: none;
 }
 
 .popup {
@@ -1229,13 +1228,10 @@ legend {
   left: 0;
 }
 
-
 .toggle-max {
   top: -8px;
   right: -10px;
 }
-
-
 
 .container-filter-submit {
   display: flex;
