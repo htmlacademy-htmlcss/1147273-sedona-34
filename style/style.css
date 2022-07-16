@@ -111,7 +111,7 @@ button {
   height: 100%;
   display: flex;
   background-color: rgba(255, 255, 255, 0.703);
-
+  display: none;
 }
 
 .popup {
@@ -624,18 +624,6 @@ button {
   color: #000;
 }
 
-.advantages-list li:nth-child(3) img {
-  margin-bottom: 30px;
-}
-
-.advantages-list li:nth-child(4) img {
-  margin-bottom: 30px;
-}
-
-.advantages-list li:nth-child(5) img {
-  margin-bottom: 30px;
-}
-
 .advantage-list li:nth-child(3) {
   background-color: #E5E5E5;
   color: #000;
@@ -649,6 +637,20 @@ button {
 .advantage-list li:nth-child(5) {
  background-color: #F0F6FA;
  color: #000;
+}
+
+.advantage-item img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.container-sity img {
+  display: block;
+}
+
+.container-bridge img {
+  display: block;
 }
 
 .advantages h3 {
@@ -669,10 +671,16 @@ button {
   font-weight: 400;
 }
 
-.container-sity img, .container-bridge img {
+/* .container-sity img{
   display: block;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
+
+.container-bridge img {
+  display: block;
+  margin: 0 auto;
+} */
 
 /*Преимущества начало*/
 
