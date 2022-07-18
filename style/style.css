@@ -40,6 +40,7 @@ html {
 
 
 body {
+  width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -47,14 +48,21 @@ body {
   font-size: 18px;
   line-height: 21px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  background-color: #F2F2F2;
+  box-shadow:
+    0 0px 0px rgb(0 0 0 / 30%),
+    0px 0 0px -6px rgb(0 0 0 / 80%),
+    0px 0 10px 0px rgb(0 0 0 / 80%),
+    0 0 40px rgb(0 0 0 / 10%) inset
 }
 
 button {
+  font-family: "PT Sans", sans-serif;
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
@@ -91,7 +99,7 @@ button {
   background: url(../images/background-blure.jpg) no-repeat;
   background-size: cover;
   max-width: 100%;
-  height: 411px;
+  /* height: 411px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -100,6 +108,8 @@ button {
   width: 1200px;
   margin: 0 auto;
   flex-grow: 1;
+  background-color: #fff;
+
 }
 
 .popup-container {
@@ -119,7 +129,7 @@ button {
   margin: auto;
   background-color: #fff;
   width: 715px;
-  padding: 62px 70px 70px 70px;
+  padding: 62px 70px 60px 70px;
   border-radius: 30px;
   transition: all 0.8s ease 0s;
 }
@@ -150,11 +160,11 @@ button {
 }
 
 .popup-close:hover {
-  background-color:  #E6E6E6;;
+  background-color: #E6E6E6;
 }
 
 .popup-close:focus {
-  background-color:  #E6E6E6;;
+  background-color: #E6E6E6;
   border: 3px solid #83B3D3;
 }
 
@@ -183,7 +193,7 @@ button {
 
 .text-info {
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   left: 27%;
   color: #FF5757;
   font-size: 16px;
@@ -191,13 +201,13 @@ button {
 }
 
 .text-info-none {
-  display: none;
+  color: #333333;
 }
 
 .field-group {
   font-weight: 700;
   font-size: 20px;
-  line-height: 26px;
+  line-height: 46px;
 }
 
 .popup-form-filed {
@@ -230,7 +240,7 @@ button {
   border-radius: 50%;
   position: absolute;
   right: -30px;
-  top: 2px;
+  top: 12px;
   display: block;
 }
 
@@ -246,7 +256,7 @@ button {
   width: 256px;
   position: absolute;
   top: 100%;
-  margin-top: 20px;
+  margin-top: 9px;
   left: 85%;
   transform: translateX(-40%);
   z-index: 1;
@@ -254,20 +264,20 @@ button {
 }
 
 .info-child:before {
-  content:'';
+  content: '';
   background-image: url(../images/tooltip-arrow.svg);
   width: 19px;
   height: 9px;
-  position:absolute;
+  position: absolute;
   bottom: 100%;
-  left:0;
-  right:0;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
 }
 
-.info-child-button:hover + .info-child,
-.info-child-button:focus + .info-child {
+.info-child-button:hover+.info-child,
+.info-child-button:focus+.info-child {
   display: block;
 }
 
@@ -350,15 +360,18 @@ button {
 .inner-input-counter {
   display: flex;
   width: 133px;
-  padding: 14px 19px;
+  padding: 14px;
   justify-content: space-between;
   background-color: #F2F2F2;
   border-radius: 4px;
 }
 
 .button-search {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
   border: none;
-  background-color:  #83B3D3;
+  background-color: #83B3D3;
   padding: 16px 26px;
   border-radius: 10px;
   width: 100%;
@@ -376,7 +389,6 @@ button {
   background-color: #68A2CA;
   opacity: 0.6;
 }
-
 
 /**************Главный конец**************/
 
@@ -433,6 +445,7 @@ button {
   border-radius: 50%;
   font-weight: 400;
   line-height: 20px;
+  display: block;
 }
 
 .navigation-link:hover {
@@ -460,7 +473,7 @@ button {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
-  padding: 8px 30px;
+  padding: 8px 33px;
   margin-left: 20px;
 }
 
@@ -491,7 +504,7 @@ button {
 .navigation-user {
   padding: 0;
   margin: 0;
-  max-width: 272px;
+  width: 265px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -518,7 +531,6 @@ button {
   position: relative;
   width: 140px;
 }
-
 
 /*Шапка конец*/
 
@@ -560,11 +572,10 @@ button {
 
 .advantages-title-description {
   margin: 0;
+  color: #333333;
   margin-bottom: 90px;
   font-size: 22px;
-  line-height: 26px;
 }
-
 
 .advantages-list {
   background-color: #82B3D3;
@@ -580,7 +591,6 @@ button {
 .advantages-list li:nth-child(2) {
   grid-column: 2 / -1;
 }
-
 
 .advantage-list li:nth-child(1) {
   grid-column: 1 / 3;
@@ -598,6 +608,15 @@ button {
   padding: 80px 85px;
 }
 
+.advantages p {
+  margin: 0;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+}
+
 .advantage-list {
   list-style-type: none;
   display: grid;
@@ -610,8 +629,8 @@ button {
 }
 
 .advantages-list li:nth-child(3) {
-   background-color: #F0F6FA;
-   color: #000;
+  background-color: #F0F6FA;
+  color: #000;
 }
 
 .advantages-list li:nth-child(4) {
@@ -625,18 +644,21 @@ button {
 }
 
 .advantage-list li:nth-child(3) {
-  background-color: #E5E5E5;
+  background-color: #F0F6FA;
   color: #000;
+  padding: 102px 85px;
 }
 
 .advantage-list li:nth-child(4) {
- background-color: #E6F0F6;
- color: #000;
+  background-color: #E6F0F6;
+  color: #000;
+  padding: 102px 85px;
 }
 
 .advantage-list li:nth-child(5) {
- background-color: #F0F6FA;
- color: #000;
+  background-color: #F0F6FA;
+  color: #000;
+  padding: 102px 85px;
 }
 
 .advantage-item img {
@@ -662,31 +684,15 @@ button {
   margin-bottom: 30px;
 }
 
-.advantages p {
-  margin: 0;
-  margin-top: 30px;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+.advantage-decription {
+  color: #333333;
 }
-
-/* .container-sity img{
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 30px;
-}
-
-.container-bridge img {
-  display: block;
-  margin: 0 auto;
-} */
 
 /*Преимущества начало*/
 
 .hotel-search {
   text-align: center;
-  padding-top: 91px;
+  padding-top: 85px;
   padding-bottom: 93px;
 }
 
@@ -706,7 +712,6 @@ button {
   margin: 0;
   margin-bottom: 56px;
 }
-
 
 .link-catalog {
   display: block;
@@ -791,6 +796,7 @@ button {
 }
 
 .buttton-subscribe {
+  font-size: 20px;
   background-color: #82B3D3;
   padding: 12px 15px;
   border-radius: 0 10px 10px 0;
@@ -874,11 +880,15 @@ button {
 
 .container-footer {
   margin: 0 auto;
-  width: 1036px;
+  width: 1056px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 45px 0px 35px 0px;
+  padding: 36px 0px 35px 0px;
+}
+
+.about-logo {
+  width: 122px;
 }
 
 .about-logo a {
@@ -906,13 +916,9 @@ button {
 
 /**************Главный начало**************/
 
-
-
 /**************Каталог начало**************/
 
 /*Фильтр начало*/
-
-
 
 .container-background-image-filter {
   background: url(../images/background.jpg) no-repeat;
@@ -932,7 +938,6 @@ button {
   background: transparent url(../images/pattern.png) repeat top left;
   z-index: -1;
   opacity: 0.4;
-  box-shadow: #fff 0px 0px 0px 10px;
 }
 
 .blur {
@@ -1006,6 +1011,7 @@ button {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
+  width: 5px;
 }
 
 .container-filter {
@@ -1014,9 +1020,9 @@ button {
 }
 
 .catalog-filter-group {
- border: none;
- padding: 0;
- margin: 0;
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 legend {
@@ -1033,11 +1039,11 @@ legend {
 
 .inner-header-title {
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   display: block;
   font-size: 60px;
   font-weight: 700;
+  line-height: 78px;
   text-transform: capitalize;
 }
 
@@ -1048,7 +1054,14 @@ legend {
 .container-filter-group {
   display: flex;
   justify-content: space-between;
-  width: 430px;
+  width: 375px;
+}
+
+.container-filter-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 510px;
 }
 
 .catalog-filter-list {
@@ -1072,24 +1085,24 @@ legend {
 }
 
 .control-label {
-  font-weight:normal;
+  font-weight: normal;
 }
 
 .control:hover .control-mark {
   opacity: 0.6;
 }
 
-.control-input:disabled + .control-mark {
+.control-input:disabled+.control-mark {
   opacity: 0.2;
 }
 
-.control-input:focus + .control-mark {
+.control-input:focus+.control-mark {
   box-shadow: #83b3d3 0px 0px 0px 3px;
   opacity: 0.6;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before,
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked+.control-mark::before,
+.control-input[type="checkbox"]:checked+.control-mark::after {
   position: absolute;
   top: 10px;
   left: 5px;
@@ -1098,30 +1111,30 @@ legend {
   content: "";
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked+.control-mark::before {
   transform: rotate(45deg);
   width: 6px;
   left: 3px;
 }
 
-.control-input[type="checkbox"]:checked + .control-mark::after {
+.control-input[type="checkbox"]:checked+.control-mark::after {
   transform: rotate(-52deg);
   width: 13px;
   top: 8px;
   left: 5px;
 }
 
-.control-input[type="radio"] + .control-mark {
+.control-input[type="radio"]+.control-mark {
   border-radius: 50%;
 }
 
-.control-input[type="radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked+.control-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;
   width: 10px;
   height: 10px;
-  background-color:  #3F5E72;;
+  background-color: #3F5E72;
   border-radius: 50%;
   content: "";
 }
@@ -1136,7 +1149,6 @@ legend {
   border-radius: 4px;
 }
 
-
 .catalog-filter-title {
   font-size: 20px;
   font-weight: 700;
@@ -1149,12 +1161,17 @@ legend {
 }
 
 .range-wrapper-inputs {
-  width: 280px;
+  width: 291px;
   margin-bottom: 38px;
   border: 3px solid #fff;
   border-radius: 4px;
   padding: 11px 17px;
   display: flex;
+  cursor: pointer;
+}
+
+.range-wrapper-inputs:hover {
+  border: 3px solid rgb(133, 133, 133);
 }
 
 .catalog-filter-label {
@@ -1274,7 +1291,12 @@ legend {
   color: #fff;
   display: block;
   text-align: center;
-  padding: 14px 30px;
+  padding: 14px 30px 1px 30px;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
 }
 
 .button-filter-esc:hover {
@@ -1301,7 +1323,7 @@ legend {
   border-radius: 4px;
   margin: 0;
   display: block;
-  padding: 16px 17px;
+  padding: 14px 15px;
 }
 
 .select {
@@ -1350,6 +1372,7 @@ legend {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  border-radius: 4px;
 }
 
 .select-control-info:hover,
@@ -1379,7 +1402,7 @@ legend {
   border-radius: 4px;
   margin: 0;
   display: block;
-  padding: 16px 17px;
+  padding: 14px 15px;
 }
 
 .button-sort img {
@@ -1391,7 +1414,7 @@ legend {
 .inner-catalog-link {
   display: flex;
   justify-content: space-between;
-  width: 170px;
+  width: 160px;
 }
 
 .container-catalog {
@@ -1399,7 +1422,7 @@ legend {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 57px 71px 25px 73px;
+  padding: 50px 71px 25px 73px;
 }
 
 .container-catalog-title {
@@ -1407,6 +1430,7 @@ legend {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 56px;
 }
 
 .container-product-card {
@@ -1414,6 +1438,7 @@ legend {
   display: grid;
   grid-template-columns: 340px 340px 340px;
   column-gap: 18px;
+  margin-bottom: 80px;
 }
 
 .container-catalog-paginaion {
@@ -1426,6 +1451,8 @@ legend {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
+  margin: 0;
+  margin-right: 113px;
 }
 
 .product-card {
@@ -1453,7 +1480,8 @@ legend {
   margin-bottom: 16px;
 }
 
-.inner-button a, .inner-button button {
+.inner-button a,
+.inner-button button {
   width: 140px;
 }
 
@@ -1464,6 +1492,9 @@ legend {
   line-height: 28px;
   text-decoration: none;
   color: black;
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 13px;
 }
 
 .product-card-link {
@@ -1478,6 +1509,7 @@ legend {
 }
 
 .product-card-button {
+  font-family: "PT Sans", sans-serif;
   margin: 0;
   padding: 0;
   display: block;
@@ -1566,15 +1598,14 @@ legend {
   color: #333333;
   background-color: #F2F2F2;
   border-radius: 4px;
-  padding: 9px 15px;
+  padding: 9px 21px;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 20px;
 }
 
 .container-catalog-paginaion {
-  margin: auto;
-  width: 1030px;
+  width: 1056px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1584,7 +1615,7 @@ legend {
   padding: 0;
   display: flex;
   list-style-type: none;
-  width: 420px;
+  width: 407px;
   justify-content: space-between;
 }
 
@@ -1621,7 +1652,7 @@ legend {
 }
 
 .inner-info-catalog {
-  width: 390px;
+  width: 386px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1658,7 +1689,7 @@ legend {
 
 .background-img {
   background-color: #fff;
-  padding-top: 94px;
+  padding-top: 81px;
   padding-bottom: 94px;
 }
 
@@ -1668,4 +1699,5 @@ legend {
   font-size: 18px;
   line-height: 21px;
 }
+
 /**************Каталог конец**************/
