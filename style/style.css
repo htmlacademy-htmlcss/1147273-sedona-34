@@ -40,7 +40,7 @@ html {
 
 
 body {
-  width: 1200px;
+  min-width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -50,11 +50,6 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #F2F2F2;
-  box-shadow:
-    0 0px 0px rgb(0 0 0 / 30%),
-    0px 0 0px -6px rgb(0 0 0 / 80%),
-    0px 0 10px 0px rgb(0 0 0 / 80%),
-    0 0 40px rgb(0 0 0 / 10%) inset
 }
 
 button {
@@ -72,7 +67,7 @@ button {
 }
 
 .image-background {
-  background-color: #fff;
+  background-color: #000;
   color: #000;
   background: url(../images/background.jpg) no-repeat;
   background-size: 100% auto;
@@ -94,12 +89,11 @@ button {
 }
 
 .background-image-subscribe {
-  background-color: #fff;
+  background-color: #000;
   color: #000;
   background: url(../images/background-blure.jpg) no-repeat;
   background-size: cover;
   max-width: 100%;
-  /* height: 411px; */
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -109,7 +103,11 @@ button {
   margin: 0 auto;
   flex-grow: 1;
   background-color: #fff;
-
+  box-shadow:
+  0 0px 0px rgb(0 0 0 / 30%),
+   0px 0 0px -6px rgb(0 0 0 / 30%),
+    0px 0 10px 0px rgb(0 0 0 / 30%),
+     0 0 40px rgb(0 0 0 / 10%) inset
 }
 
 .popup-container {
@@ -431,11 +429,8 @@ button {
   z-index: 1;
   position: absolute;
   display: none;
-  content: "12";
-  letter-spacing: -0.1em;
-  color: #fff;
+  content: "";
   font-size: 10px;
-  text-align: center;
   padding: 0;
   width: 20px;
   height: 20px;
@@ -446,6 +441,18 @@ button {
   font-weight: 400;
   line-height: 20px;
   display: block;
+}
+
+.quantity {
+  position: absolute;
+  font-size: 10px;
+  z-index: 2;
+  letter-spacing: -0.1em;
+  color: #fff;
+  font-weight: 400;
+  text-align: center;
+  top: 17%;
+  right: 5px;
 }
 
 .navigation-link:hover {
@@ -479,10 +486,12 @@ button {
 
 .link-login:hover {
   background-color: #615048;
+
 }
 
 .link-login:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .link-login:disabled {
@@ -735,6 +744,7 @@ button {
 
 .link-catalog:active {
   background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .link-catalog:disabled {
@@ -809,6 +819,7 @@ button {
 
 .buttton-subscribe:active {
   background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .buttton-subscribe:disabled {
@@ -870,7 +881,7 @@ button {
 }
 
 .number-text a:active {
-  color: #D6D0CD;
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .number-text {
@@ -927,9 +938,11 @@ button {
   padding: 35px 70px 70px 70px;
   position: relative;
   z-index: 0;
+  background-color: #000;
 }
 
-.box-overlay {
+.container-background-image-filter::after {
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -940,7 +953,8 @@ button {
   opacity: 0.4;
 }
 
-.blur {
+.container-background-image-filter::before {
+  content: "";
   width: 100%;
   height: 100%;
   position: absolute;
@@ -952,6 +966,30 @@ button {
   z-index: -2;
   filter: blur(6px);
 }
+
+/* .box-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: transparent url(../images/pattern.png) repeat top left;
+  z-index: -1;
+  opacity: 0.4;
+} */
+
+/* .blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+  background: url(../images/background.jpg) no-repeat;
+  z-index: -2;
+  filter: blur(6px);
+} */
 
 .home-link {
   z-index: 50;
@@ -1005,6 +1043,7 @@ button {
 
 .breadcrumbs-link:active {
   color: #868885;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item-right img {
@@ -1021,11 +1060,6 @@ button {
 
 .catalog-filter-group {
   border: none;
-  padding: 0;
-  margin: 0;
-}
-
-legend {
   padding: 0;
   margin: 0;
 }
@@ -1246,6 +1280,7 @@ legend {
 
 .range-toggle:active {
   border: 2px solid #83B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .toggle-min {
@@ -1279,7 +1314,7 @@ legend {
 
 .botton-filter:active {
   background-color: #82B3D3;
-  color: #A7CAE0;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .botton-filter:disabled {
@@ -1305,11 +1340,11 @@ legend {
 
 .button-filter-esc:focus {
   border: #68A2CA solid 2px;
-  padding: 12px 30px;
+  padding: 11px 30px 0px 30px;
 }
 
 .button-filter-esc:active {
-  opacity: 0.3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*Фильтр конец*/
@@ -1533,7 +1568,7 @@ legend {
 }
 
 .product-card-button:active {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-card-button:disabled {
@@ -1554,7 +1589,7 @@ legend {
 }
 
 .button-favourites:active {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favourites:disabled {
@@ -1575,7 +1610,7 @@ legend {
 }
 
 .button-favourites-active:active {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favourites-active:disabled {
@@ -1643,7 +1678,7 @@ legend {
 }
 
 .pagination-link:active {
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .pagination-current {
